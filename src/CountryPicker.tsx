@@ -107,7 +107,9 @@ export const CountryPicker = (props: CountryPickerProps) => {
     closeButtonStyle,
     closeButtonImageStyle,
     excludeCountries,
-    placeholder,
+	placeholder,
+	headerTitle,
+	headerStyle,
   } = props
   const [state, setState] = useState<State>({
     visible: props.visible || false,
@@ -186,7 +188,9 @@ export const CountryPicker = (props: CountryPickerProps) => {
             closeButtonImage,
             closeButtonImageStyle,
             closeButtonStyle,
-            withCloseButton,
+			withCloseButton,
+			headerTitle,
+			headerStyle,
           }}
           renderFilter={(props: CountryFilter['props']) =>
             renderFilter({

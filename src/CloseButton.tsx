@@ -57,8 +57,7 @@ const CloseButtonAndroid = (props: CloseButtonProps) => {
             source={closeImage}
             style={[
               styles.imageStyle,
-              props.imageStyle,
-              { tintColor: onBackgroundTextColor }
+              props.imageStyle
             ]}
           />
         </View>
